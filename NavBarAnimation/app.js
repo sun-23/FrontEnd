@@ -16,7 +16,6 @@ let observer = new IntersectionObserver(navCheck, options);
 // entries คือ สิ่งที่ตรวจจับทั้งหมด entry คือ สิ่งที่ตรวจจับ 1 อย่าง
 function navCheck(entries){
     entries.forEach(entry => {
-        //do bubble
         //console.log(entry.target)
         //console.log(entry.boundingClientRect)
 
