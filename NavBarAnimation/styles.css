@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky; /* fixed position top */
+    top: 0px;
+    background: white;
+}
+
+nav {
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > ul, nav > h1 {
+    font-size: 1.5rem;
+    flex: 1; /* h1 and ul in nav ratio is 1:1*/
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none; /*delete line under text*/
+}
+
+section {
+    min-height: 100vh;
+    /*make text is center of section*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+section.home {
+    background: linear-gradient(to right top, #f46b45, #eea849);
+}
+
+section.project {
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+
+section.about {
+    background: linear-gradient(to right top, #e53935, #e35d5b);
+}
+
+div.bubble {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #f46b45, #eea849);
+    transform: scale(2); /* scale is 2*/
+    transition: all 0.5s ease;
+}
